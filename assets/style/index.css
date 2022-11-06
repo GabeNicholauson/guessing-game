@@ -9,3 +9,41 @@ body {
     display: grid;
     place-items: center;
 }
+
+.game-ui {
+    display: flex;
+    flex-direction: column;
+}
+
+.game-ui input {
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.game-ui input[type="text"] {
+    background-color: #313131;
+    color: #fff;
+}
+
+.game-ui input[type="text"]::placeholder {
+    color: #c4c4c4;
+}
+
+.game-ui input + input {
+    margin-top: 10px;
+}
+
+.enter-guess {
+    color: #fff;
+    background-color: #3b3bff;
+}
+
+.result {
+    pointer-events: none;
+}
+
+.total-guesses {
+    color: #fff;
+}
